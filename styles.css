@@ -1,37 +1,79 @@
-body {
+* {
+    font-family: 'Indie Flower', cursive;
+}
+
+html, 
+body { 
+    margin: 0;
+    height: 100%;
     background-color: honeydew;
+}
+body {
+    z-index: 1;
+}
+
+.main {
+    
+    text-align: center;
+    height: 100%;
+    width: 100%;
 }
 
 h1 {
     text-align: center;
-    margin-top: 10vh;
-    font-family: 'Indie Flower', cursive;
     font-size: 5vw;
+}
 
+.size-button {
+    width: 12vw;
+    height: fit-content;
+    font-size: 1vw;
 }
 
 .etch-container {
     border: 10px solid rgb(255, 75, 10);
     border-radius: 5%;
     margin: auto;
-    width: 35vw;
-    height: 35vw;
+    width: 70vw;
+    height: 75%;
     display: flex;
     flex-direction: column;
     z-index: 2;
 }
 
-.grid-row,
-.grid-pixel {
-    flex: 1;
+    .grid-row,
+    .grid-pixel {
+        flex: 1;
+    }
+
+    .grid-row {
+        display: flex;
+    }
+
+    .grid-pixel {
+        border: 1px solid black;
+        background-color: honeydew;
+        z-index: -1;
+    }
+
+.size-selection-window {
+    position: absolute;
+    height: 50vh;
+    width: 70vw;
+    margin-left: 15%;
+
+/* please make a selection between 10 and 200 that will determine the height and width of your grid */
+    background-color: hsl(272, 73%, 90%);
 }
 
-.grid-row {
-    display: flex;
-}
-
-.grid-pixel {
-    border: 1px solid black;
-    background-color: honeydew;
+.hidden {
     z-index: -1;
+}
+
+.visible {
+    z-index: 1;
+}
+
+.unclickable {
+    pointer-events: none;
 }
