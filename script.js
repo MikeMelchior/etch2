@@ -112,6 +112,16 @@ mainContent.appendChild(etchContainer)
 
 const knobsContainer = document.createElement('div');
 knobsContainer.classList.add('knobs-container');
+
+const knobOne = document.createElement('div');
+knobOne.classList.add('knob-one');
+const knobTwo = document.createElement('div');
+knobTwo.classList.add('knob-two');
+knobsContainer.appendChild(knobOne);
+knobsContainer.appendChild(knobTwo);
+
+
+
 mainContent.appendChild(knobsContainer);
 
     
