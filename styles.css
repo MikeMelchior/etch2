@@ -181,6 +181,7 @@ button:hover {
 
 .style-window {
     padding-top: 15px;
+    top: 20vh;
 }
 
     .style-exit-button {
@@ -188,7 +189,7 @@ button:hover {
         right: 0;
         top: 0;
         flex: none;
-        width: fit-content;
+        width: 50px;
         height: fit-content;
         padding: 10px;
         font-size: 25px;
