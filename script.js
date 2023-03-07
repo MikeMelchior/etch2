@@ -1,7 +1,7 @@
 let gridSize = 0;
 let color = 'black'
 let defaultColor = '#E6E6E6'
-let tool = 'pencil';
+let tool = 'pencil'; 
 
 
 // main div contains all content on page
